@@ -25,9 +25,26 @@
 		<div class="row">
 			<div class="col-md-4">
 
-				<ul class="nav-list">
-					<li><a href="#">Our Experience</a></li>
-					<li><a href="#">Our Values</a></li>
+				<ul class="nav-list nav-contacts-icon">
+						<li>
+								<a href="tel:+17188290222">
+									<svg class="footer-email">
+										<use xlink:href="img/sprite-svg.svg#phone-receiver"></use>
+									</svg>
+									<span>+1 718-829-0222</span>
+								</a>
+							</li>
+							<li>
+								<a href="mailto:lcmcabinets@gmail.com">
+									<svg class="footer-phone">
+										<use xlink:href="img/sprite-svg.svg#email"></use>
+									</svg>
+									lcmcabinets@gmail.com
+								</a>
+							</li>
+							<li>
+								<a class="nav-link-footer-qoute" href="" data-toggle="modal" data-target=".bd-example-modal-lg">Get a quote</a>
+							</li>
 				</ul>
 			</div>
 
@@ -92,15 +109,7 @@
 			</div>
 			<div class="modal-body">
 				<form action="">
-					<div class="form-row">
-						<div class="col">
-							<div class="dropzone">
-								<input type="file" name="file-4[]" id="file-4" class="inputfile inputfile-3" accept="image/gif, image/jpeg" data-multiple-caption="{count} files selected" multiple="">
-								<label for="file-4"><span class="drop-title">Uploade image</span><br>
-								<span class="note needsclick">The loaded image should not weight more than 100kb</span></label>
-							</div>
-						</div>
-					</div>
+					
 					<div class="form-row">
 						<div class="col-md-4 col-sm-12">
 							<input type="text" class="form-control" placeholder="Last Name , First Name *">
@@ -149,6 +158,15 @@
 							</select>
 						</div>
 					</div>
+					<div class="form-row">
+							<div class="col">
+								<div class="dropzone">
+									<input type="file" name="file-4[]" id="file-4" class="inputfile inputfile-3" accept="image/gif, image/jpeg" data-multiple-caption="{count} files selected" multiple="">
+									<label for="file-4"><span class="drop-title">Upload (PDS, JPG, DOC)</span><br>
+									<!-- <span class="note needsclick">The loaded image should not weight more than 100kb</span></label> -->
+								</div>
+							</div>
+						</div>
 					<div class="form-group">
 						<label for="exampleFormControlTextarea1">Is there anything else we should know ? *</label>
 						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>

@@ -1,3 +1,10 @@
+.nav-contacts-icon a {
+    position: relative;
+    padding-left: 40px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 300;
+}
 @keyframes slideIn {
 	0% {
 		filter: blur(15px)
@@ -665,11 +672,14 @@ section.social_main_page {
 	fill: #fff;
 }
 
-.modal-ltsgo h5, footer h5 {
+.modal-ltsgo h5 {
 	font-size: 17px;
-	font-weight: 900;
-	color: #010101;
+	color: #c8992e;
 	margin-bottom: 30px;
+}
+ footer h5 {
+	font-size: 17px;
+	color: #1b1b1b;
 }
 .modal-ltsgo h5 {
 
@@ -678,12 +688,12 @@ section.social_main_page {
 svg.footer-email, svg.footer-phone {
 	width: 20px;
 	height: 20px;
-	fill: #ffff;
-	margin-right: 5px;
+	fill: #2b2a20;
+	/* margin: 11px; */
 	position: absolute;
 	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	left: 3px;
+	transform: translateY(-50%);
 }
 
 .socila_links.footer-social {
@@ -789,7 +799,7 @@ svg.footer-email, svg.footer-phone {
 	}
 
 	.modal-ltsgo label {
-		margin: 0;
+		margin: 0 !important;
 	}
 
 	.modal-ltsgo .custom-select, .modal-ltsgo input.form-control, .modal-ltsgo textarea.form-control {
@@ -1055,7 +1065,8 @@ svg.footer-email, svg.footer-phone {
 }
 
 .modal-ltsgo h5 {
-	font-size: 18px
+	font-size: 24px;
+	font-family: 'MADECoachella-Light';
 }
 
 .modal-ltsgo .form-row {
@@ -1065,7 +1076,9 @@ svg.footer-email, svg.footer-phone {
 .modal-ltsgo .custom-select, .modal-ltsgo input.form-control, .modal-ltsgo textarea.form-control {
 	border-radius: 0;
 	height: 60px;
-	border-color: #e6e6e6
+	border-color: #e6e6e6;
+	font-family: Josefin Sans;
+	font-weight: 400;
 }
 
 .modal-ltsgo textarea.form-control {
@@ -1073,14 +1086,17 @@ svg.footer-email, svg.footer-phone {
 }
 
 .modal-ltsgo label {
-	color: #9b9a9a
+	color: #404040;
 }
 
 button.btn.btn-modal-wuote {
-	color: #36bece;
-	border: 1px solid #36bece;
-	border-radius: 0;
-	padding: 25px 120px
+	background: #c8992e;
+	border-radius: 30px;
+	color: #fff;
+	padding: 9px 70px;
+	font-family: Josefin Sans;
+	font-weight: 300;
+	font-size: 17px;
 }
 
 .modal-ltsgo .modal-header {
@@ -1735,7 +1751,7 @@ svg.page-nav-icon.revers {
 .dropzone {
 	background: white;
 	border-radius: 5px;
-	border: 1px dashed rgb(230, 230, 230);
+	border: 1px dashed rgb(200, 152, 47);
 	border-image: none;
 	margin-left: auto;
 	margin-right: auto;
@@ -1769,7 +1785,8 @@ svg.page-nav-icon.revers {
 }
 
 .modal-ltsgo label {
-	margin-top: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 svg.close_modal {
@@ -1896,7 +1913,7 @@ svg.close_modal {
 }
 
 .inputfile-3:focus + label, .inputfile-3.has-focus + label, .inputfile-3 + label:hover {
-	color: #36bece;
+	color: #c8982f;
 }
 
 .active {
@@ -2611,6 +2628,7 @@ color: #000;
 	display:flex;
 	justify-content:center;
 	align-items:center;
+	margin-left: 35px;
 }
 
 
@@ -2926,4 +2944,39 @@ img.solution-img-right {
 
 .solution_section {
     margin-bottom: 100px;
+}
+
+button.btn.btn-modal-wuote:hover {
+    opacity: 0.8;
+}
+
+.nav-contacts-icon a span {
+    color: #2b2a20;
+    font-size: 17px;
+    font-weight: 500;
+}
+a.nav-link-footer-qoute {
+    color: #2b2a20;
+    font-size: 20px;
+    padding: 0px 40px;
+    margin: 0;
+    border: 1px solid #666666;
+    border-radius: 50px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.nav-link-footer-qoute:hover {
+    color: #fff;
+    background: #cb9e3a;
+    border-color: #cb9e3a;
+}
+.footer-classic a:hover {
+    color: #b1831d;
+    text-decoration: none;
+}
+.navbar-collapse {
+    justify-content: flex-end;
 }
