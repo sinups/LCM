@@ -1,39 +1,17 @@
 @@include('templates/header.html')
-<div class="banner-thumbnail-wrapper" >
-	<div class="color-overlay " style="background: rgba(0, 0, 0, 0.58) url(img/contact-bg.png) no-repeat center top; background-size: cover;" ></div>
-	<div class="container">
-		
-		<div class="desc-wrapper tmpl-loading" >
-			<h1 class="page-title">Contact Us</h1>
-			<div class="page-links-nav">
-				<div class="page-description">
-					<ul>
-						<li><a href="#">Our contact details </a> </li>
-						<li><a href="#">Write to us </a> </li>
-						<li><a href="#">Find on map </a> </li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+
 <div class="about-title">
-	<div class="container text-center">
-		<h1>Contact Us</h1>
-		
+	<div class="container text-center contact-us-title">
+		<h1 >Contact Us</h1>
+		<p>Have any questions, or need advice? Contact us.</p>
 	</div>
 </div>
 <div class="contacts-info">
 	<div class="container">
-		<div class="row">
-			<div class=" col-sm-12 col-md-4 cocntact-page-number"><a href=" tel:+ 373(69)445455"><svg class="svg-contact-info"><use xlink:href="img/sprite-svg.svg#phone-receiver"></use></svg> + 373 (69) 44 54 55</a> </div>
-			<div class=" col-sm-12 col-md-4"><a href="mailto:mce@gmail.com"><svg class="svg-contact-info"><use xlink:href="img/sprite-svg.svg#email"></use></svg> idlcobstruction@gmail.com</a></div>
-			<div class=" col-sm-12 col-md-4">
-				<address>
-				<svg class="svg-contact-info"><use xlink:href="img/sprite-svg.svg#facebook-placeholder-for-locate-places-on-maps"></use></svg> 4500 NW 37th Ave. Miami Fl
-				33142
-			</address>
-			<a href="#maps" class="contact-f-m">Find on map</a>
+		<div class="row contact-info-box">
+			<div class=" col-sm-12 col-md-6 contact-info-box-item"><a href=" tel:+ 373(69)445455"><svg class="svg-contact-info"><use xlink:href="img/sprite-svg.svg#phone-receiver"></use></svg> + 373 (69) 44 54 55</a> </div>
+			<div class=" col-sm-12 col-md-6 contact-info-box-item"><a href="mailto:mce@gmail.com"><svg class="svg-contact-info"><use xlink:href="img/sprite-svg.svg#email"></use></svg> mce@gmail.com</a></div>
+			
 		</div>
 	</div>
 	
@@ -43,50 +21,36 @@
 <div class="about-title">
 <div class="container text-center">
 	<h1>Write to Us</h1>
-	
+	<p>Send us your question by writing, and we will answer you in the near future</p>
 </div>
 </div>
 <section class="contact-us-main c-u-contacts">
-
 <div class="container text-center">
-<form action="">
-	<div class="row">
-		<div class="col-md-6">
-			<div class="form-row">
-				<div class="col-md-12 col-sm-12">
-					<input type="text" class="form-control" placeholder="First Name *">
-				</div>
-			</div>
-			<div class="form-row">
-				<div class="col-md-12 col-sm-12">
-					<input type="text" class="form-control" placeholder="Last Name *">
-				</div>
-			</div>
-			<div class="form-row">
-				<div class="col-md-12 col-sm-12">
-					<input type="text" class="form-control" placeholder="E-mail Adress *">
-				</div>
-			</div>
+	<div class="form-row">
+		<div class="col-md-4 col-sm-12">
+			<input type="text" class="form-control" placeholder="First Name *">
 		</div>
-		<div class="col-md-6">
-			<div class="form-row">
-				<div class="col">
-					<input type="text" class="form-control" placeholder="Subject *">
-				</div>
-			</div>
-			<div class="form-group">
-				<textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Message *"></textarea>
-			</div>
+		<div class="col-md-4 col-sm-12">
+			<input type="text" class="form-control" placeholder="Last Name *">
+		</div>
+		<div class="col-md-4 col-sm-12">
+			<input type="text" class="form-control" placeholder="E-mail Adress *">
 		</div>
 	</div>
-	
+	<div class="form-row">
+		<div class="col">
+			<input type="text" class="form-control" placeholder="Subject *">
+		</div>
+	</div>
+	<div class="form-group">
+		<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message *"></textarea>
+	</div>
 </form>
 <div class="sumbit-btn">
-	<button class="btn contact-btn">Send</button>
+	<button class="btn contact-btn">Send IT</button>
 </div>
 </div>
 </section>
-<div class="googlemap" id="maps">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d83998.91163207506!2d2.347059899999999!3d48.858858949999984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sfr!4v1425301582595" width="800" height="600" frameborder="0" style="border:0"></iframe>
+
 </div>
 @@include('templates/footer.html')

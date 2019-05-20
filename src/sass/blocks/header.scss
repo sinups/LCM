@@ -581,7 +581,7 @@ footer {
 }
 
 button.btn.contact-btn {
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #3a2e1d;
 	border-radius: 0;
 	padding: 5px 60px;
@@ -591,9 +591,9 @@ button.btn.contact-btn {
 }
 
 button.btn.contact-btn:hover {
-	color: rgba(0, 0, 0, .77);
-	border: 1px solid rgba(0, 0, 0, .57);
-	cursor: pointer
+	color: rgba(255, 255, 255, 0.77);
+	/* border: 1px solid rgba(0, 0, 0, .57); */
+	cursor: pointer;
 }
 
 .contact-us-main h2, section.portfolio_tabs h2 {
@@ -1481,17 +1481,17 @@ h1 {
 }
 
 .about-title h1 {
-	font-size: 35px;
-	font-weight: 500;
 	margin-bottom: 10px;
-	color: #3b2e1d;
+	color: #c8992e;
+	font-size: 35px;
+	font-family: 'MADECoachella-Light';
 }
 
 .about-title p {
-	text-transform: uppercase;
-	font-size: 14px;
 	font-weight: 500;
-
+	color: #a0a096;
+	font-size: 16px;
+	font-family: 'MADECoachella-Thin';
 }
 
 .about {
@@ -1530,6 +1530,8 @@ h1 {
 .c-u-contacts input.form-control {
 	border-color: #ced4da;
 	border-width: 1px;
+	font-family: Josefin Sans;
+	font-weight: 200;
 }
 
 .c-u-contacts  textarea.form-control {
@@ -1540,9 +1542,17 @@ h1 {
 }
 
 .c-u-contacts button.btn.contact-btn {
-	border: 2px solid #3b2e1d;
-	font-weight: bold;
-
+	font-weight: 300;
+	background: #b1831d;
+	border-radius: 30px;
+	padding: 5px 50px;
+	/* margin-right: 20px; */
+	display: flex;
+	justify-content: center;
+	font-family: Josefin Sans;
+	align-items: center;
+	color: #fff;
+	font-size: 20px;
 }
 
 
@@ -2381,6 +2391,8 @@ input.form-control::placeholder {
 
 .sumbit-btn {
 	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 .footer_contact_round {
@@ -2527,9 +2539,7 @@ transition: 0.2s ease-in-out;
 color: #fff;
 }
 
-.c-u-contacts textarea.form-control{
-color: #000;
-}
+.c-u-contacts textarea.form-control{color: #000;font-family: Josefin Sans;font-weight: 200;}
 
 .c-u-contacts input.form-control{
 color: #000;
@@ -2780,7 +2790,7 @@ a.btn.btn-chose:hover {
 }
 
 
-.copy .row {}
+
 
 .copy .row .col-md-6 {
     display: flex;
@@ -2800,4 +2810,31 @@ a.btn.btn-chose:hover {
 .footer_header h5 {
     margin: 0;
     padding: 30px 0px;
+}
+
+.row.contact-info-box {border: 1px solid #ced4da;padding: 20px 0px;}
+
+.contact-info-box .contact-info-box-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.contact-info-box .contact-info-box-item:first-child {
+    border-right: 1px solid #ced4da;
+}
+
+
+
+.container.text-center.contact-us-title h1 {
+    color: #000;
+    font-size: 50px;
+}
+
+.c-u-contacts button.btn.contact-btn:hover {
+    background: #9d7315;
+}
+.contacts-info .container {
+    padding: 0px 150px;
 }
