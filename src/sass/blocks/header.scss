@@ -1497,18 +1497,9 @@ h1 {
 .about {
 }
 
-.about h2 {
+.about h2 {font-size: 20px;font-weight: 400;margin-bottom: 10px;margin-top: 100px;margin-bottom: 50px;}
 
-	font-size: 45px;
-	font-weight: 500;
-	margin-bottom: 10px;
-}
-
-.about p {
-
-	font-size: 17px;
-	font-weight: 400;
-}
+.about p {font-size: 16px;/* font-weight: 400; */color: #a0a096;font-family: 'MADECoachella-Thin';line-height: 30px;}
 
 .about img {
 	padding: 30px 0px;
@@ -2837,4 +2828,68 @@ a.btn.btn-chose:hover {
 }
 .contacts-info .container {
     padding: 0px 150px;
+}
+.tabs_about_links {
+    display: flex;
+}
+
+svg.tab_about-svg {
+    width: 60px;
+    height: 60px;
+    fill: #000;
+    margin-bottom: 15px;
+}
+
+.tabs_about_links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 40px;
+    text-decoration: none;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: -1px;
+}
+
+.tabs_about_links .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-bottom: 1px solid #e6e6e6; */
+    /* margin: 0px 35%; */
+}
+
+.tabs_about_links a.active {
+    border-bottom: 1px solid #b1831d;
+}
+
+.tabs_about_links a.active svg.tab_about-svg {
+    fill: #b1831d;
+}
+
+
+.tabs_about_links a.active:hover {
+    /* pointer-events: none; */
+}
+
+.tabs_about_links a:hover {
+    color: #b1831d;
+    border-color: #b1831d;
+}
+
+.tabs_about_links a:hover svg {
+    fill: #b1831d;
+}
+
+.tab_link_block {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+article.about {}
+
+article.about h1 {
+    font-family: 'MADECoachella-Light';
+    color: #c8992e;
+    font-size: 35px;
 }
