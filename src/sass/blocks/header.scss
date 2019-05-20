@@ -514,8 +514,13 @@ a:hover {
 
 .footer-classic a, .footer-classic a:active, .footer-classic a:focus {
 	color: #84847c;
+	
+}
+.footer-classic a {
+
 	font-size: 14px;
 }
+
 
 .nav-list li {
 	padding-top: 5px;
@@ -2977,6 +2982,127 @@ a.nav-link-footer-qoute:hover {
     color: #b1831d;
     text-decoration: none;
 }
+a.nav-link-footer-qoute:hover {
+	color: #fff;
+}
 .navbar-collapse {
     justify-content: flex-end;
+}
+.portfolio_tabs {
+    margin-bottom: 60px;
+}
+
+.portfolio_tabs .row {
+    display: flex;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 25px 0px 0;
+}
+
+.portfolio_tabs .portfolio_tabs_item {
+    width: calc(100% / 6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* border-bottom: 1px solid #cacaca; */
+    padding-bottom: 30px;
+}
+
+.portfolio_tabs_item {}
+
+svg.portfolio_tabs-svg {
+    width: 60px;
+    height: 60px;
+    fill: #b0b0b0;
+    margin-bottom: 20px;
+}
+
+.portfolio_tabs_item {}
+
+.portfolio_tabs_item span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio_tabs_item a {
+    text-decoration: none;
+}
+
+.portfolio_tabs_item {}
+
+.portfolio_tabs_item.active {
+    border-bottom: 1px solid #d1a139;
+    margin-bottom: -1px;
+}
+
+.portfolio_tabs_item.active a {
+    color: #d1a238;
+}
+
+.portfolio_tabs_item.active a svg {
+    fill: #d1a238;
+}
+
+.portfolio_tabs_item a:hover {
+    color: #d1a238;
+}
+
+.portfolio_tabs_item a:hover svg {
+    fill: #d1a238;
+}
+
+
+.portfolio_tabs_item {
+    /* border-bottom: 1px solid #cacaca; */
+    overflow: hidden;
+}
+
+.portfolio_tabs_item:hover {
+    border-bottom: 1px solid #d1a139;
+    margin-bottom: -1px;
+}
+
+
+
+.portfolio_items.small-img img {
+    width: 100%;
+}
+
+.portfolio_items.big-img img {
+    width: 100%;
+}
+
+.portfolio_items.big-img {
+	margin: 5px;
+	height: 345px;
+    overflow: hidden;
+}
+
+.portfolio_items.small-img {
+	margin: 5px;
+	
+}
+
+.row.small-gutters {
+    margin: 0;
+}
+.portfolio_items-box {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio_items-box .small-img {
+	width: 50%;
+	height: 185px;
+    overflow: hidden;
+}
+
+.small_img_portfolio {
+    display: flex;
+    width: 100%;
+}
+.row.portfolio_container {
+    margin: 20px 0px;
 }
