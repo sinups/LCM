@@ -48,7 +48,7 @@ gulp.task('sass', function(){
           'last 10 Opera versions',
           'last 7 Firefox versions'
         ]}),                                                // автопрефиксирование
-        mqpacker({ sort: true }),                           // объединение медиавыражений
+        mqpacker({ sort: false }),                           // объединение медиавыражений
     ]))
     .pipe(sourcemaps.write('/'))                            // записываем карту кода как отдельный файл (путь из константы)
     .pipe(gulp.dest(dirs.build + '/css/'))                  // записываем CSS-файл (путь из константы)
