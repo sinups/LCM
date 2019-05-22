@@ -278,3 +278,34 @@ $(document).on('show.bs.modal', function () {
 });
 
 new WOW().init();
+
+(function($) {
+  $(function() {
+    $("ul.tabs__caption").on("click", "li:not(.active)", function() {
+      $(this)
+        .addClass("active")
+        .siblings()
+        .removeClass("active")
+        .closest("div.tabs")
+        .find("div.tabs__content")
+        .removeClass("active")
+        .eq($(this).index())
+        .addClass("active");
+    });
+  });
+})(jQuery);
+
+$('.tab_dors .tab_dors--item').click(function(){
+ $('.tab_dors .tab_dors--item').removeClass('active');
+ $(this).toggleClass('active');
+})
+
+$('#edge_detail_box').change(function(){
+  $('#edge_detail img').attr('src', $('#edge_detail_box').val());
+});
+$('#inside_profile_box').change(function(){
+  $('#inside_profile img').attr('src', $('#inside_profile_box').val());
+});
+$('#panel_box').change(function(){
+  $('#panel img').attr('src', $('#panel_box').val());
+});

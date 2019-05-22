@@ -3211,6 +3211,123 @@ img.solution-img-right {
 }
   }
   
-  
+  .row.style_tabs {
+    justify-content: center;
+}
+
+.type-of_element a {
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.type-of_element img {
+	max-width: 100%;
+	margin-bottom: 20px;
+
+}
+
+.row.type-of-center{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
 
 
+
+.type-of_element {
+	margin-bottom: 20px;
+}
+
+
+.tab_dors .tab_dors--item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+.tab_dors .tab_dors--item p {
+	text-align: center;
+}
+
+.tab_dors .tab_dors--item img {
+	margin-bottom: 15px;
+	border: 1px solid transparent;
+	padding: 20px 50px;
+}
+
+
+.tab_dors .tab_dors--item.active img {
+	border: 1px solid #b1831d;
+
+	border-radius: 15px;
+}
+
+
+.img_constructor_box {
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px solid #dee2e6;
+	display: flex;
+	justify-content: flex-start;
+
+	overflow: hidden;
+}
+
+
+.tab_product_info h3 {
+	font-family: 'MADECoachella-Light';
+	font-size: 35px;
+	margin-bottom: 30px;
+}
+
+.custom_select_builder select {
+	width: 100%;
+	/* height: 30px; */
+	margin-bottom: 20px;
+	border: none;
+	font-size: 22px;
+	font-family: Josefin Sans;
+	/* text-transform: capitalize; */
+	font-weight: 300;
+	border-bottom: 1px solid #dee2e6;
+	padding: 15px 0px;
+}
+
+.custom_select_builder {
+	position: relative;
+}
+
+.custom_select_builder select option {
+	font-size: 16px;
+}
+
+a.btn.btn-buy {
+	background: #b1831d;
+	border-radius: 30px;
+	padding: 10px 40px;
+	margin-right: 20px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.product_buy {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
