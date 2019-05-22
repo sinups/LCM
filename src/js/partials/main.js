@@ -277,3 +277,4 @@ $(document).on('show.bs.modal', function () {
   window.scrollTo(0, previousScrollY);
 });
 
+new WOW().init();
