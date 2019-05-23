@@ -1862,29 +1862,28 @@
 	height: 70px;
 	background-size: contain;
 	position: absolute;
-	left: 70%;
 	transform: translate(50%);
-	top: unset;
+	top: 50%;
 	bottom: 120px;
 	background-color: rgb(255, 255, 255);
 	&:hover {
-	  background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.8);
 	}
-  }
+	}
   
   .main-slider .slick-next {
 	transform: translate(50%);
 	width: 70px;
 	height: 70px;
 	background-size: contain;
-	left: 73.6%;
-	top: unset;
+	/* left: 73.6%; */
+	top: 50%;
 	bottom: 120px;
 	background-color: rgb(181, 171, 159);
 	&:hover {
-	  background-color: rgba(181, 171, 159, 0.8);
+	background-color: rgba(181, 171, 159, 0.8);
 	}
-  }
+	}
   
   .drop-menu {
 	border: none;
@@ -2200,31 +2199,7 @@
   .modal-open .modal {
 	-webkit-overflow-scrolling: touch;
   }
-  @media (max-width: 1560px) {
-	.main-slider .slick-prev {
-	  left: 69%;
-	}
-  }
-  @media (max-width: 1400px) {
-	.main-slider .slick-prev {
-	  left: 68.9%;
-	}
-  }
-  @media (max-width: 1300px) {
-	.main-slider .slick-prev {
-	  left: 67.9%;
-	}
-  }
-  @media (max-width: 1300px) {
-	.main-slider .slick-prev {
-	  left: 67.9%;
-	}
-  }
-  @media (max-width: 1100px) {
-	.main-slider .slick-prev {
-	  left: 66.9%;
-	}
-  }
+ 
   
   .sub_page {
 	border-top: 1px dotted #dee2e6;
@@ -2759,6 +2734,9 @@
 	.nav-link {
 	  margin: 0 20px;
 	}
+	.btnSlider {
+    display: none;
+}
   
 	.review-author {
 	  text-align: center;
@@ -3448,3 +3426,47 @@ article.about img {
  }
 
 
+
+ .btnSlider {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.slider_main-page {
+	position: relative;
+}
+
+.slick-prev-btn ,.slick-next-btn {
+	align-items: center;
+	justify-content: center;
+	top: calc(50% - 18px);
+	left: 0;
+	position: absolute;
+	transition: .3s;
+	cursor: pointer;
+	z-index: 7;
+	color: #fff;
+	width: 55px;
+	height: 29px;
+	border-bottom: 1px solid #ffffff;
+}
+
+.slick-next-btn {
+	right: 0;
+	left: auto;
+}
+
+.slider_main-page .container {
+	position: relative;
+	position: relative;
+	height: 100%;
+}
+
+.slick-next-btn span {
+	right: 0;
+	display: flex;
+	justify-content: flex-end;
+}

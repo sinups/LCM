@@ -126,9 +126,10 @@ $(function() {
   });
 
   //start the slider
+  //start the slider
   slideWrapper.slick({
     // fade:true,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 4000,
     lazyLoad:"progressive",
     speed:600,
@@ -139,8 +140,7 @@ $(function() {
     {
       breakpoint: 1100,
       settings: {
-        arrows: false,
-        dots:false,
+        arrows: false
       }
     }
   ]
@@ -148,20 +148,16 @@ $(function() {
 });
 
 
-// $('.left').click(function(){
-//   $('.main-slider').slick('slickPrev');
-// })
 
-// $('.right').click(function(){
-//   $('.main-slider').slick('slickNext');
-// })
 
-$('.main-slider .slick-next').click(function(){
+$('.slider_main-page .slick-prev-btn').click(function(){
   $('.main-slider').slick('slickPrev');
+  console.log('click');
 })
 
-$('.main-slider .slick-prev').click(function(){
+$('.slider_main-page .slick-next-btn').click(function(){
   $('.main-slider').slick('slickNext');
+  
 });
 
 // Resize event
@@ -276,7 +272,9 @@ $(document).on('show.bs.modal', function () {
   });
   window.scrollTo(0, previousScrollY);
 });
-
+if ($(window).width() <= 991){ 
+  $(".wow").removeClass("wow");
+  }
 new WOW().init();
 
 (function($) {
